@@ -1,0 +1,74 @@
+.card-depoiment {
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(83, 90, 255, 0.1);
+  border-radius: 15px;
+  padding: 75px 70px 65px 70px;
+  transform: scale(0.8);
+  transition: all .2s ease-in-out;
+  &--active {
+    transform: scale(1);
+  }
+  &__text {
+    position: relative;
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #626262;
+    &::before,
+    &::after {
+      position: absolute;
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      color: #545ae8;
+      width: 25px;
+      height: 21px;
+    }
+    &::before {
+      top: -10px;
+      left: -30px;
+      content: "“";
+    }
+    &::after {
+      bottom: -10px;
+      right: -20px;
+      content: "”";
+    }
+  }
+  &__content {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &__photo-container {
+    background: #ffffff;
+    box-shadow: 0px 4px 50px rgba(83, 90, 255, 0.1);
+    border-radius: 15px;
+    border-radius: 50%;
+    border: 10px solid $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__author {
+    font-family: $inter;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #545ae8;
+  }
+  &__position {
+    display: inline-block;
+    font-family: $inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d4d4d;
+    margin-top: 10px;
+  }
+}

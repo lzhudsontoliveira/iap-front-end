@@ -1,0 +1,54 @@
+.accordion {
+  $root: &;
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(83, 90, 255, 0.1);
+  border-radius: 15px;
+  &--active {
+    #{$root}__button {
+      &::after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+  &__button {
+    padding: 30px 35px 30px 40px;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #545ae8;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url("../../../public/images/icon/arrow.svg") no-repeat center;
+      position: absolute;
+      top: 50%;
+      right: 35px;
+      transform: translateY(-50%);
+    }
+  }
+  &__content {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: max-height 0.2s ease-in-out;
+  }
+  &__text {
+    padding: 40px 90px 80px 90px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #626262;
+  }
+}

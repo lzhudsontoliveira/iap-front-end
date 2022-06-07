@@ -1,0 +1,32 @@
+.course-slider {
+  margin-top: 60px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1380px;
+    margin: 0 auto;
+  }
+  &__button {
+    $root: &;
+    width: 43px;
+    height: 43px;
+    background: #ffffff;
+    box-shadow: 0px 4px 50px rgba(83, 90, 255, 0.1);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--prev {
+      #{$root}-arrow {
+        transform: rotate(90deg);
+      }
+    }
+    &--next {
+      #{$root}-arrow {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

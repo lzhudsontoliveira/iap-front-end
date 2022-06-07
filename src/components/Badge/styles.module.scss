@@ -1,0 +1,30 @@
+.badge {
+  font-family: $roboto;
+  font-weight: 500;
+  font-size: pxToRem(16);
+  text-align: center;
+  color: $white;
+  background: #545ae8;
+  border-radius: 76px;
+  border: 1px solid transparent;
+  height: 45px;
+  padding: 0px 25px;
+  display: flex;
+  align-items: center;
+  &--outline {
+    color: #545ae8;
+    background-color: transparent;
+    border: 1px solid #545ae8;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #545ae8;
+      color: $white;
+      transform: translateY(-5px);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    &:active {
+      transform: translateY(-2px);
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

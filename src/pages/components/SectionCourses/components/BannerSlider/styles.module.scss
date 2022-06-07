@@ -1,0 +1,42 @@
+.banner-slider {
+  max-width: 1064px;
+  margin: 0 auto;
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  &__pagination-bullet {
+    width: 34px;
+    height: 4px;
+    background: #c4c4c4;
+    border-radius: 64px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 64px;
+    }
+    &--active {
+      opacity: 1;
+      &::before {
+        background: #545AE8;
+        animation: 3s sliderTimer infinite ease;
+      }
+    }
+  }
+}
+
+@keyframes sliderTimer {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

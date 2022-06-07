@@ -1,0 +1,104 @@
+.blog {
+  padding-top: 220px;
+  padding-bottom: 165px;
+  position: relative;
+  &::before {
+    content: "";
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -30px;
+    width: 958px;
+    height: 1494px;
+    background: #ffffff;
+    box-shadow: 10px 10px 148px rgb(84 90 232 / 20%);
+    z-index: 4;
+    border-top-left-radius: 400px;
+  }
+  &__container {
+    display: flex;
+    gap: 100px;
+    margin-right: 0;
+    position: relative;
+    z-index: 5;
+    @media (max-width: 1920px) {
+      margin-left: 325px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 300px;
+    min-width: 300px;
+  }
+  &__small-title {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  &__title {
+    margin-bottom: 35px;
+    text-align: left;
+  }
+  &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #414141;
+    margin-bottom: 50px;
+  }
+  &__link {
+    background: linear-gradient(214.12deg, #df5fff -5.77%, #3893ff 108.51%);
+    border-radius: 15px;
+    padding: 25px 20px;
+    max-width: 180px;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  &__slider {
+  }
+  &__slide {
+    width: 355px !important;
+  }
+  &__buttons-container {
+    display: flex;
+    gap: 25px;
+  }
+  &__button {
+    $rootButton: &;
+    width: 43px;
+    height: 43px;
+    background: #ffffff;
+    box-shadow: 0px 4px 50px rgba(83, 90, 255, 0.1);
+    border-radius: 50%;
+    border: none;
+    &--prev, &--next {
+      background-color: $white;
+    }
+    &:first-child {
+      img {
+        transform: rotate(90deg);
+      }
+    }
+    &:last-child {
+      img {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  &__call-to-action {
+    margin-top: 185px !important;
+    position: relative;
+    z-index: 5;
+  }
+}

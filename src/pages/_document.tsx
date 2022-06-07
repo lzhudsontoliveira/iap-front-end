@@ -5,12 +5,13 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
       <Head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet"></link>
       </Head>
       <body>
-        <Main />
+        <Main/>
         <NextScript/>
       </body>
       </Html>

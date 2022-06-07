@@ -1,0 +1,95 @@
+.header {
+  background: rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(80px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  &__container {
+    width: 100%;
+    max-width: 1820px;
+    margin: 0 auto;
+    padding: 18px 38px;
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 60px;
+  }
+  &__menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-family: $roboto;
+    color: $white;
+    font-weight: 400;
+    font-size: pxToRem(18px);
+    line-height: pxToRem(21px);
+    text-transform: uppercase;
+  }
+  &__other-links-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  &__button-search {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(40px);
+    border-radius: 75px;
+    margin-right: 30px;
+  }
+  &__button-register {
+    width: 165px;
+    height: 50px;
+    background: linear-gradient(214.12deg, #df5fff -5.77%, #3893ff 108.51%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-family: $roboto;
+    font-weight: 600;
+    font-size: pxToRem(16px);
+    line-height: pxToRem(19px);
+    text-transform: uppercase;
+    margin-right: 40px;
+  }
+  &__button-cart {
+    margin-right: 30px;
+    position: relative;
+  }
+  &__button-cart-number {
+    position: absolute;
+    top: -10px;
+    right: -14px;
+    font-family: $inter;
+    color: $white;
+    font-size: pxToRem(12);
+    font-weight: 700;
+    border-radius: 50%;
+    border: 2px solid $white;
+    width: 21px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__social-list {
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    display: flex;
+    list-style: none;
+    padding: 12px 16px;
+    background: linear-gradient(214.12deg, #DF5FFF -5.77%, #3893FF 108.51%);
+    gap: 25px;
+    align-items: center;
+    border-bottom-right-radius: 8px;
+  }
+}
