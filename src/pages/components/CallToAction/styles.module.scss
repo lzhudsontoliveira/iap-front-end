@@ -1,0 +1,48 @@
+.call-to-action {
+  width: 765px;
+  margin: 0 auto;
+  padding: 85px 165px;
+  background: url("../../../../public/images/components/call-to-action/background-call-to-action.png") no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  &__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 34px;
+  }
+
+  &__link {
+    background: linear-gradient(214.12deg, #5fff6f -5.77%, #3893ff 108.51%);
+    border-radius: 15px;
+    width: 370px;
+    padding: 24px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Roboto";
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+  }
+}

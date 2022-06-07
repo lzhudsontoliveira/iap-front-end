@@ -1,0 +1,16 @@
+.frequent-questions {
+  padding: 165px 0px 205px 0px;
+  background: #F6F6FF;
+  backdrop-filter: blur(40px);
+  small {
+    margin-bottom: 10px;
+  }
+  &__accordion-list {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

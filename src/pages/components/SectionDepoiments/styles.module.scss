@@ -1,0 +1,54 @@
+.depoiments {
+  background: url("../../../../public/images/components/section-depoiments/background.svg")
+    no-repeat center/cover;
+  padding-top: 235px;
+  padding-bottom: 255px;
+  &__small {
+    color: $white;
+  }
+  &__title {
+    background: linear-gradient(214.12deg, #df5fff -5.77%, #3893ff 108.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-top: 10px;
+  }
+  &__slider-container {
+    margin-top: 135px;
+    position: relative;
+  }
+  &__button {
+    $rootButton: &;
+    width: 43px;
+    height: 43px;
+    background: #ffffff;
+    box-shadow: 0px 4px 50px rgba(83, 90, 255, 0.1);
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 50%;
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      right: 0;
+    }
+    &:first-child {
+      img {
+        transform: rotate(90deg);
+      }
+    }
+    &:last-child {
+      img {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  // &__slide {
+  //   transform: scale(0.7) !important;
+  //   &--active {
+  //     transform: scale(1) !important;
+  //   }
+  // }
+}

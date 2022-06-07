@@ -1,0 +1,33 @@
+.courses {
+  padding-top: 100px;
+  padding-bottom: 145px;
+  &__title-container {
+    margin-top: 110px;
+  }
+  &__title {
+    margin-top: 10px;
+  }
+  &__course-slider {
+    max-width: 1235px;
+    margin: 0 auto;
+  }
+  &__link {
+    display: inline-flex;
+    margin: 0 auto;
+    width: 365px;
+    height: 80px;
+    background: linear-gradient(214.12deg, #df5fff -5.77%, #3893ff 108.51%);
+    border-radius: 15px;
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
