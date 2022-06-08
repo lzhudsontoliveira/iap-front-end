@@ -1,0 +1,30 @@
+.card-blog {
+  &__meta {
+    margin-top: 42px;
+    display: flex;
+    gap: 14px;
+  }
+  &__date {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  &__title {
+    margin-top: 40px;
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #565656;
+  }
+  &__excerpt {
+    margin-top: 40px;
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #818181;
+  }
+}
