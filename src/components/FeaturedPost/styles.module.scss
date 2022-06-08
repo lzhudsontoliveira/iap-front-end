@@ -1,0 +1,52 @@
+.featured-post {
+  display: flex;
+  width: 100%;
+  gap: 48px;
+  &__featured-text {
+    font-family: $inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #a8a8a8;
+    display: flex;
+    gap: 1rem;
+    margin-top: 30px;
+  }
+  &__title {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #565656;
+    width: 450px;
+    margin-top: 30px;
+  }
+  &__meta {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  &__date {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__date-text {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #414141;
+  }
+  &__description {
+    margin-top: 20px;
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #818181;
+  }
+}
