@@ -1,12 +1,12 @@
-import { Container } from "../../../components/layout/Container";
 import styles from "./styles.module.scss";
 import "swiper/css/pagination";
 import BannerSlider from "./components/BannerSlider";
-import { Small } from "../../../components/Small";
-import { TitleSection } from "../../../components/TitleSection";
-import { HighlightText } from "../../../components/HighlightText";
 import CourseSlider from "./components/CourseSlider";
 import { Numbers } from "./components/Numbers";
+import { Container } from "../../layout/Container";
+import { Small } from "../../Small";
+import { TitleSection } from "../../TitleSection";
+import { HighlightText } from "../../HighlightText";
 
 export function SectionCourses() {
   return (

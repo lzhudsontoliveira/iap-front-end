@@ -1,12 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
-import { Container } from "../../../components/layout/Container";
-import { Small } from "../../../components/Small";
-import { TitleSection } from "../../../components/TitleSection";
 import styles from "./styles.module.scss";
-import { CardNotice } from "../../../components/CardNotice";
 import { useRef } from "react";
+import { Container } from "../../layout/Container";
+import { Small } from "../../Small";
+import { TitleSection } from "../../TitleSection";
+import { CardNotice } from "../../CardNotice";
 import { CallToAction } from "../CallToAction";
 
 export function SectionBlog() {

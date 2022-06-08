@@ -1,5 +1,6 @@
-import { HighlightText } from "../../../../../components/HighlightText";
-import { TitleSection } from "../../../../../components/TitleSection";
+
+import { HighlightText } from "../../../../HighlightText";
+import { TitleSection } from "../../../../TitleSection";
 import styles from "./styles.module.scss";
 
 export function Numbers() {
