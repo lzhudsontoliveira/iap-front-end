@@ -1,0 +1,31 @@
+.blog-single {
+  &__featured-image {
+    width: 100%;
+  }
+  &__back-button {
+    margin-top: 65px;
+  }
+  &__meta {
+    display: flex;
+    gap: 30px;
+    margin-top: 36px;
+  }
+  &__date {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  &__title {
+    margin-top: 24px;
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #565656;
+  }
+  &__share {
+    margin-top: 150px;
+    margin-bottom: 170px;
+  }
+}
