@@ -36,14 +36,14 @@
       transform: translateY(-50%);
     }
   }
-  &__content {
+  &__content-container {
     background-color: white;
     max-height: 0;
     overflow: hidden;
     border-radius: 15px;
     transition: max-height 0.2s ease-in-out;
   }
-  &__text {
+  &__content {
     padding: 40px 90px 80px 90px;
     font-family: "Inter";
     font-weight: 400;
