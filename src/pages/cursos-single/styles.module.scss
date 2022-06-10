@@ -1,0 +1,65 @@
+.courses-single-top {
+  position: relative;
+  &__background {
+    width: 100%;
+  }
+  &__course-card {
+    position: absolute;
+    bottom: -40px;
+  }
+  &__container {
+    max-width: 1320px;
+  }
+}
+
+.courses-single-content {
+  margin-top: 206px;
+  &__container {
+    max-width: 1320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__back-button {
+    align-self: flex-start;
+  }
+  &__accordions {
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__accordion-button {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+  }
+  &__accordion-title {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #414141;
+  }
+  &__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 51px;
+    width: 446px;
+    height: 82px;
+    background: linear-gradient(214.12deg, #df5fff -5.77%, #3893ff 108.51%);
+    border-radius: 10px;
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 95px;
+    margin-bottom: 202px;
+    text-transform: uppercase;
+  }
+}
