@@ -1,0 +1,82 @@
+.course-card-detail {
+  padding: 81px 61px 94px 74px;
+  background: rgba(0, 0, 0, 0.19);
+  backdrop-filter: blur(200px);
+  border-radius: 20px;
+  width: fit-content;
+
+  &__type {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__name,
+  &__category {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__name {
+    margin-top: 8px;
+  }
+  &__prices-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__installments-text,
+  &__cash-value-text {
+    font-family: $inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 137.02%;
+    color: $white;
+  }
+  &__installment-amount,
+  &__cash-value {
+    font-family: $inter;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 137.02%;
+    color: $white;
+  }
+  &__buttons-container {
+    margin-top: 62px;
+    display: flex;
+    gap: 33px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__button-purchase {
+    background: linear-gradient(214.12deg, #df5fff -5.77%, #3893ff 108.51%);
+    border-radius: 10px;
+    padding: 21px 42px;
+    font-family: $inter;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__button-video-demo {
+    font-family: $inter;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: $white;
+    padding: 21px 42px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
