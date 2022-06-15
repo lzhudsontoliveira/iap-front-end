@@ -1,0 +1,33 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  label {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    color: #565656;
+  }
+  input {
+    background: #ffffff;
+    border: 2px solid #dcdeff;
+    border-radius: 15px;
+    padding: 22px 20px 22px 30px;
+    &::placeholder {
+      font-family: $roboto;
+      font-weight: 400;
+      font-size: 22px;
+      color: #c4c4c4;
+    }
+  }
+  select {
+    background: #ffffff;
+    border: 2px solid #dcdeff;
+    border-radius: 15px;
+    padding: 22px 20px 22px 30px;
+    appearance: none;
+    color: #565656;
+  }
+}
