@@ -1,0 +1,99 @@
+.register {
+  margin-top: 160px;
+  margin-bottom: 170px;
+  background: $white;
+  box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+  border-radius: 15px;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 60px 80px 60px;
+  &__title {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #565656;
+  }
+  &__form {
+    margin-top: 70px;
+  }
+  &__fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 75px;
+    row-gap: 40px;
+  }
+  &__separator {
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+  &__legend {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    color: #565656;
+  }
+  &__areas-interest-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 42px;
+    margin-bottom: 48px;
+  }
+  &__terms {
+    margin-top: 140px;
+    margin-bottom: 55px;
+    max-height: 395px;
+    overflow: scroll;
+    background: rgba(1, 1, 1, 0.04);
+    backdrop-filter: blur(40px);
+    border-radius: 15px;
+    padding: 45px 160px 20px 60px;
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #545ae8;
+      border-radius: 8px;
+    }
+    h2 {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      color: #797979;
+      margin-bottom: 2rem;
+    }
+    p {
+      color: #797979;
+      & + p {
+        margin-top: 1rem;
+      }
+    }
+    strong {
+      color: #797979;
+    }
+  }
+  &__observation-text {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: #797979;
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+  &__submit {
+    background: linear-gradient(214.12deg, #df5fff -5.77%, #3893ff 108.51%);
+    border-radius: 15px;
+    padding: 28px 63px;
+    font-family: $inter;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    border: none;
+  }
+}
