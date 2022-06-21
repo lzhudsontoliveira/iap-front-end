@@ -41,7 +41,7 @@ export default function MateriaisGratuitosSingle() {
 
           <div className={styles["free-materials-single__content"]}>
             <div className={styles["free-materials-single__top"]}>
-              <img src="/images/icon/list-icon.svg" alt="Descrição" />
+              <img className={styles["free-materials-single__icon"]} src="/images/icon/list-icon.svg" alt="Descrição" />
               Descrição
             </div>
             <p className={styles["free-materials-single__description"]}>
