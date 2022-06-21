@@ -29,7 +29,7 @@ export default function CoursesSingle() {
                 className={styles["courses-single-content__accordion-button"]}
               >
                 <img
-                  className={styles["coruses-single-content__accordion-icon"]}
+                  className={styles["courses-single-content__accordion-icon"]}
                   src="/images/components/courses-single/target.svg"
                   alt="Ícone de Objetivo"
                 />
@@ -54,7 +54,7 @@ export default function CoursesSingle() {
                 className={styles["courses-single-content__accordion-button"]}
               >
                 <img
-                  className={styles["coruses-single-content__accordion-icon"]}
+                  className={styles["courses-single-content__accordion-icon"]}
                   src="/images/components/courses-single/check.svg"
                   alt="Ícone de Certo"
                 />
@@ -91,7 +91,7 @@ export default function CoursesSingle() {
                 className={styles["courses-single-content__accordion-button"]}
               >
                 <img
-                  className={styles["coruses-single-content__accordion-icon"]}
+                  className={styles["courses-single-content__accordion-icon"]}
                   src="/images/components/courses-single/clock.svg"
                   alt="Ícone de Relógio"
                 />
@@ -108,7 +108,7 @@ export default function CoursesSingle() {
                 className={styles["courses-single-content__accordion-button"]}
               >
                 <img
-                  className={styles["coruses-single-content__accordion-icon"]}
+                  className={styles["courses-single-content__accordion-icon"]}
                   src="/images/components/courses-single/informations.svg"
                   alt="Ícone de Informações"
                 />
@@ -146,7 +146,7 @@ export default function CoursesSingle() {
                 className={styles["courses-single-content__accordion-button"]}
               >
                 <img
-                  className={styles["coruses-single-content__accordion-icon"]}
+                  className={styles["courses-single-content__accordion-icon"]}
                   src="/images/components/courses-single/content.svg"
                   alt="Ícone de Conteúdo"
                 />
@@ -200,7 +200,7 @@ export default function CoursesSingle() {
                 className={styles["courses-single-content__accordion-button"]}
               >
                 <img
-                  className={styles["coruses-single-content__accordion-icon"]}
+                  className={styles["courses-single-content__accordion-icon"]}
                   src="/images/components/courses-single/rules.svg"
                   alt="Ícone de Regras"
                 />
@@ -262,7 +262,7 @@ export default function CoursesSingle() {
                 className={styles["courses-single-content__accordion-button"]}
               >
                 <img
-                  className={styles["coruses-single-content__accordion-icon"]}
+                  className={styles["courses-single-content__accordion-icon"]}
                   src="/images/components/courses-single/certified.svg"
                   alt="Certificado"
                 />

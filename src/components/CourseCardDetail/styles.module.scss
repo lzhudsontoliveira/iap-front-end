@@ -4,7 +4,10 @@
   backdrop-filter: blur(200px);
   border-radius: 20px;
   width: fit-content;
-
+  @media (max-width: 425px) {
+    width: 100%;
+    padding: 45px;
+  }
   &__type {
     font-family: $roboto;
     font-weight: 700;
@@ -12,6 +15,9 @@
     line-height: 23px;
     text-transform: uppercase;
     color: $white;
+    @media (max-width: 425px) {
+      font-size: pxToRem(16);
+    }
   }
   &__name,
   &__category {
@@ -21,14 +27,24 @@
     line-height: 45px;
     text-transform: uppercase;
     color: $white;
+    @media (max-width: 425px) {
+      font-size: pxToRem(30);
+      line-height: pxToRem(35.16);
+    }
   }
   &__name {
     margin-top: 8px;
+    @media (max-width: 425px) {
+      margin-top: pxToRem(12);
+    }
   }
   &__prices-container {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 425px) {
+      margin-top: 25px;
+    }
   }
   &__installments-text,
   &__cash-value-text {
@@ -48,10 +64,17 @@
   }
   &__buttons-container {
     margin-top: 62px;
-    display: flex;
     gap: 33px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media (max-width: 425px) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      max-width: 210px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__button-purchase {
     background: linear-gradient(214.12deg, #df5fff -5.77%, #3893ff 108.51%);
@@ -65,6 +88,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 425px) {
+      padding: 24px 42px;
+    }
   }
   &__button-video-demo {
     font-family: $inter;
@@ -78,5 +104,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 425px) {
+      padding: 24px 42px;
+    }
   }
 }
