@@ -20,14 +20,27 @@
     margin-top: 63px;
     margin-bottom: 95px;
     align-self: flex-start;
+    @media (max-width: 425px) {
+      width: 100%;
+    }
   }
   &__featured-post {
     margin-bottom: 160px;
+    @media (max-width: 425px) {
+      margin-bottom: 80px;
+    }
   }
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 70px;
+    gap: 50px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 425px) {
+      grid-template-columns: 1fr;
+      row-gap: 80px;
+    }
   }
   &__pagination {
     margin: 150px auto;
