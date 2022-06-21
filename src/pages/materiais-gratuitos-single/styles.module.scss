@@ -20,12 +20,20 @@
     color: $gray-500;
     text-transform: uppercase;
     font-size: 30px;
+    @media (max-width: 425px) {
+      margin-top: 40px;
+      font-size: pxToRem(24);
+    }
   }
   &__meta {
     display: flex;
     align-items: center;
     gap: 30px;
     margin-top: 32px;
+    @media (max-width: 425px) {
+      margin-top: 24px;
+      gap: 10px;
+    }
   }
   &__date {
     display: flex;
@@ -41,6 +49,13 @@
     width: 100%;
     height: 610px;
     margin-top: 55px;
+    @media (max-width: 768px) {
+      height: 500px;
+    }
+    @media (max-width: 425px) {
+      margin-top: 30px;
+      height: 185px;
+    }
   }
   &__iframe {
     width: 100%;
@@ -49,15 +64,26 @@
   }
   &__content {
     margin-top: 50px;
+    @media (max-width: 425px) {
+      margin-top: 55px;
+    }
+  }
+  &__icon {
+    @media (max-width: 425px) {
+      width: pxToRem(19);
+    }
   }
   &__top {
     display: flex;
     align-items: center;
     gap: 9px;
     font-family: $roboto;
-    font-size: 24px;
+    font-size: pxToRem(24);
     text-transform: uppercase;
     color: $gray-500;
+    @media (max-width: 425px) {
+      font-size: pxToRem(20);
+    }
   }
   &__description {
     font-family: $roboto;
@@ -65,6 +91,11 @@
     font-size: 20px;
     color: $gray-450;
     margin-top: 36px;
+    @media (max-width: 425px) {
+      margin-top: 40px;
+      font-size: 1rem;
+      line-height: pxToRem(18.75);
+    }
   }
   &__share {
     margin-top: 100px;
