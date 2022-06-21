@@ -11,6 +11,9 @@
   padding: 0px 25px;
   display: flex;
   align-items: center;
+  @media (max-width: 425px) {
+    height: 38px;
+  }
   &--outline {
     color: #545ae8;
     background-color: transparent;
