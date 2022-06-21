@@ -23,37 +23,10 @@
     background-color: transparent;
     cursor: pointer;
   }
-  &__input-search-container {
-    background: rgba(1, 1, 1, 0.04);
-    backdrop-filter: blur(40px);
-    border-radius: 75px;
-    width: fit-content;
-    padding: 16px 22px 16px 41px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 430px;
-    margin-top: 55px;
-  }
   &__input-search {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #797979;
-    flex: 1;
-    margin-right: 20px;
-    &::placeholder {
-      font-family: $inter;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      color: #797979;
-    }
-  }
-  &__button-search {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    max-width: 430px;
+    width: 100%;
+    margin-top: 55px;
   }
 }
 

@@ -3,6 +3,7 @@ import { Badge } from "../../components/Badge";
 import styles from "./styles.module.scss";
 import CardMaterial from "../../components/CardMaterial";
 import { Pagination } from "../../components/Pagination";
+import { InputSearchContainer } from "../../components/InputSearchContainer";
 export default function MateriaisGratuitos() {
   return (
     <main>
@@ -53,21 +54,10 @@ export default function MateriaisGratuitos() {
               </button>
             </li>
           </ul>
-
-          <div className={styles["free-materials-filter__input-search-container"]}>
-            <input
-              placeholder="Pesquise em Materiais Gratuitos"
-              className={styles["free-materials-filter__input-search"]}
-              type="text"
-            />
-            <button className={styles["free-materials-filter__button-search"]}>
-              <img
-                className={styles["free-materials-filter__search-icon"]}
-                src="/images/icon/search.svg"
-                alt="Search"
-              />
-            </button>
-          </div>
+          <InputSearchContainer 
+            placeholder="Pesquise em Materiais Gratuitos"
+            className={styles["free-materials-filter__input-search"]}
+          />
         </Container>
       </section>
 
