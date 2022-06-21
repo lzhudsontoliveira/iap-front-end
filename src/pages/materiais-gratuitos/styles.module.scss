@@ -17,6 +17,12 @@
     display: flex;
     gap: 20px;
     list-style: none;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 375px) {
+      gap: 10px;
+    }
   }
   &__categories-button {
     border: none;
@@ -27,6 +33,9 @@
     max-width: 430px;
     width: 100%;
     margin-top: 55px;
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -39,6 +48,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding: 0 22px;
   }
   &__list {
     display: flex;
