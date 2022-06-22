@@ -27,13 +27,20 @@
     transition: all 0.2s ease-in-out;
     &::after {
       content: "";
-      width: 16px;
-      height: 16px;
-      background: url("../../../public/images/icon/arrow.svg") no-repeat center;
+      width: 14px;
+      height: 14px;
+      background: url("../../../public/images/icon/arrow.svg") no-repeat center/contain;
       position: absolute;
       top: 50%;
       right: 35px;
       transform: translateY(-50%);
+      @media (max-width: 425px) {
+        right: 20px;
+      }
+    }
+    @media (max-width: 425px) {
+      padding: 18px 16px 18px 22px;
+      font-size: pxToRem(14);
     }
   }
   &__content-container {
@@ -50,5 +57,10 @@
     font-size: 18px;
     line-height: 22px;
     color: #626262;
+    @media (max-width: 425px) {
+      padding: 40px 45px;
+      font-size: pxToRem(14);
+      line-height: pxToRem(18);
+    }
   }
 }
