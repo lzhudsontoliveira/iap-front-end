@@ -1,0 +1,38 @@
+.input {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    @media (max-width: 425px) {
+      gap: 12px;
+    }
+  }
+  &__label {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: pxToRem(26);
+    line-height: pxToRem(30);
+    color: $gray-500;
+    @media (max-width: 425px) {
+      font-size: pxToRem(16);
+    }
+  }
+  background: $white;
+  border: 2px solid #dcdeff;
+  border-radius: 15px;
+  padding: 22px 35px;
+  @media (max-width: 425px) {
+    padding: 11px 20px;
+  }
+  &::placeholder {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: pxToRem(22);
+    line-height: pxToRem(26);
+    color: $gray-100;
+    @media (max-width: 425px) {
+      font-size: pxToRem(16);
+    }
+  }
+}
