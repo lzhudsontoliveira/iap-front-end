@@ -1,0 +1,93 @@
+.validate-certificate {
+  margin-top: 140px;
+  margin-bottom: 340px;
+  @media (max-width: 1024px) {
+    padding: 0 2rem;
+  }
+  @media (max-width: 425px) {
+    padding: 0 1rem;
+  }
+  &__container {
+    max-width: 1320px;
+    background: #ffffff;
+    box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+    border-radius: 15px;
+    padding: 80px 60px;
+    @media (max-width: 425px) {
+      padding: 40px 20px;
+    }
+  }
+  &__title {
+    font-size: pxToRem(36);
+    line-height: pxToRem(42);
+    text-transform: none;
+    text-align: left;
+    @media (max-width: 425px) {
+      font-size: pxToRem(24);
+      line-height: pxToRem(28);
+    }
+  }
+  &__form {
+    margin-top: 85px;
+    @media (max-width: 425px) {
+      margin-top: 40px;
+    }
+  }
+  &__form-submit {
+    display: none;
+    @media (max-width: 425px) {
+      display: block;
+      margin-top: 40px;
+      background: linear-gradient(214.12deg, #df5fff -5.77%, #3893ff 108.51%);
+      border-radius: 15px;
+      width: 200px;
+      height: 70px;
+      font-family: $inter;
+      font-weight: 800;
+      font-size: pxToRem(20);
+      color: $white;
+      border: none;
+    }
+  }
+  &__result {
+    max-width: 1200px;
+    height: 190px;
+    margin: 0 auto;
+    margin-top: 75px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    @media (max-width: 768px) {
+      padding: 0 30px;
+    }
+    &--loading {
+      background: #3893ff;
+    }
+    &--error {
+      background: #ff6363;
+    }
+    &--success {
+      background: #4ee381;
+    }
+  }
+  &__result-message {
+    color: $white;
+    font-family: $roboto;
+    font-size: pxToRem(24);
+    line-height: pxToRem(28);
+  }
+  &__loading {
+    font-size: 60px;
+    margin: auto;
+  }
+  &__share {
+    display: none;
+    @media (max-width: 425px) {
+      display: flex;
+      margin-top: 145px;
+      margin-bottom: 95px;
+    }
+  }
+}
