@@ -1,0 +1,50 @@
+.cart-product {
+  display: flex;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #DFDFDF;
+  &__content {
+    margin-left: 30px;
+    @media (max-width: 425px) {
+      margin-left: 10px;
+    }
+  }
+  &__name {
+    font-size: pxToRem(18);
+  }
+  &__total-hours {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__total-lessons {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__price {
+    margin-left: auto;
+    align-self: center;
+    font-family: $inter;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: pxToRem(19);
+    color: #959595;
+    @media (max-width: 425px) {
+      display: none;
+    }
+  }
+  &__button-exclude {
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+  }
+}
