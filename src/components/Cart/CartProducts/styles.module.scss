@@ -1,0 +1,22 @@
+.cart-products {
+  background: #ffffff;
+  box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+  border-radius: 15px;
+  padding: 60px;
+  @media (max-width: 425px) {
+    padding: 20px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DFDFDF;
+  }
+  &__header-title {
+    color: $black-100;
+    font-weight: 800;
+    font-size: pxToRem(18);
+    line-height: pxToRem(22);
+  }
+}
