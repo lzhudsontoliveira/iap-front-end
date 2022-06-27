@@ -1,0 +1,70 @@
+.cart {
+  margin-top: 120px;
+  @media (max-width: 425px) {
+    margin-top: 70px;
+  }
+  &__no-products {
+    max-width: 1320px;
+    background: #ffffff;
+    box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+    border-radius: 15px;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+  }
+  &__no-products-message {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: pxToRem(26);
+    line-height: pxToRem(30);
+    text-align: center;
+    text-transform: uppercase;
+    color: #babbda;
+  }
+  &__button-courses {
+    width: 100%;
+    max-width: 400px;
+    height: 80px;
+    text-transform: uppercase;
+    font-size: pxToRem(20);
+    line-height: pxToRem(24);
+    font-weight: 800;
+    font-family: $inter;
+    margin-top: 80px;
+    margin: 0 auto;
+  }
+  &__link-courses {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 80px;
+    margin-bottom: 125px;
+    @media (max-width: 425px) {
+      margin-top: 45px;
+      margin-bottom: 110px;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 890px 1fr;
+    column-gap: 30px;
+    max-width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 200px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+  }
+  &__cart-resume {
+    position: sticky;
+  }
+}
