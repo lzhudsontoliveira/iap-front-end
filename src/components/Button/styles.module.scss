@@ -1,3 +1,8 @@
 .button {
   border-radius: 15px;
+  border: none;
+  &--gradient-blue {
+    background: linear-gradient(214.12deg, #545AE8 -5.77%, #3893FF 108.51%);
+    color: $white;
+  }
 }

@@ -3,12 +3,19 @@ import styles from "./styles.module.scss";
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   children?: ReactNode;
+  variant?: string;
 }
 
-export function Button({ children, className, ...rest }: ButtonProps) {
+const VARIANTS_CLASS = {
+  "gradient-blue": "button--gradient-blue",
+};
+
+export function Button({ children, className, variant, ...rest }: ButtonProps) {
   return (
     <button
-      className={`${styles["button"]} ${className ? className : ""}`}
+      className={`${styles["button"]} ${className ? className : ""} ${
+        styles[VARIANTS_CLASS[variant]]
+      }`}
       {...rest}
     >
       {children}
