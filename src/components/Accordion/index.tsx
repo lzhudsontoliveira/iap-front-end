@@ -3,9 +3,10 @@ import styles from "./styles.module.scss";
 
 interface AccordionProps {
   children: ReactNode;
+  className?: string;
 }
 
-export function Accordion({ children }: AccordionProps) {
+export function Accordion({ children, className }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(false);
   const contentEl = useRef<HTMLDivElement>(null);
   function handleToggleAccordion() {
@@ -14,7 +15,7 @@ export function Accordion({ children }: AccordionProps) {
 
   return (
     <div
-      className={`${styles.accordion} ${isOpen && styles["accordion--active"]}`}
+      className={`${styles.accordion} ${className ? className : ''} ${isOpen && styles["accordion--active"]}`}
     >
       <button
         onClick={handleToggleAccordion}
