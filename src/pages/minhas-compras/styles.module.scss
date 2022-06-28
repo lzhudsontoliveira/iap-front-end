@@ -1,0 +1,132 @@
+.my-courses {
+  margin-top: 120px;
+  @media (max-width: 425px) {
+    margin-top: 70px;
+  }
+  &__no-courses {
+    max-width: 1320px;
+    background: #ffffff;
+    box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+    border-radius: 15px;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+  }
+  &__no-courses-message {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: pxToRem(26);
+    line-height: pxToRem(30);
+    text-align: center;
+    text-transform: uppercase;
+    color: #babbda;
+  }
+  &__button-courses {
+    width: 100%;
+    width: 400px;
+    max-width: 400px;
+    height: 80px;
+    text-transform: uppercase;
+    font-size: pxToRem(20);
+    line-height: pxToRem(24);
+    font-weight: 800;
+    font-family: $inter;
+    margin-top: 80px;
+    margin: 0 auto;
+  }
+  &__link-courses {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 80px;
+    margin-bottom: 125px;
+    @media (max-width: 425px) {
+      margin-top: 45px;
+      margin-bottom: 110px;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+  &__search {
+    margin-top: 45px;
+  }
+  &__list {
+    margin-top: 85px;
+    list-style: none;
+    margin-bottom: 210px;
+  }
+  &__item {
+    & + & {
+      margin-top: 14px;
+    }
+  }
+  &__order-info {
+    color: $black-100;
+    display: flex;
+  }
+  &__order-number {
+    margin-right: 50px;
+    font-weight: 400;
+  }
+  &__order-date {
+    margin-right: 35px;
+  }
+  &__order-number,
+  &__order-date,
+  &__order-hour {
+    font-weight: 400;
+  }
+  &__order-date,
+  &__order-hour {
+    display: flex;
+    gap: 1rem;
+  }
+  &__order-status {
+    color: $black-100;
+  }
+  &__order-table {
+    width: 100%;
+    color: $black-100;
+    border-collapse: collapse;
+    margin-top: 40px;
+    tr {
+      &:first-child {
+        border-bottom: 1px solid #DFDFDF;
+        th {
+          padding-bottom: 14px;
+          &:first-child {
+            font-weight: 400;
+          }
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+      &:nth-child(2) {
+        td {
+          padding-top: 14px;
+          padding-bottom: 20px;
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+      &:last-child {
+        background: rgba(1, 1, 1, 0.04);
+        backdrop-filter: blur(40px);
+        border-radius: 10px;
+        td {
+          padding: 10px 0;
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
