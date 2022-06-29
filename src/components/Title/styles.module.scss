@@ -1,0 +1,15 @@
+h1, h2, h3, h4, h5, h6 {
+  &.title {
+    font-family: $roboto;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $gray-500;
+  }
+}
+
+h1 {
+  &.title {
+    font-size: pxToRem(36);
+    line-height: pxToRem(42.19);
+  }
+}
