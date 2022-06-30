@@ -5,4 +5,8 @@
     background: linear-gradient(214.12deg, #545AE8 -5.77%, #3893FF 108.51%);
     color: $white;
   }
+  &--outline-blue {
+    background-color: transparent;
+    border: 4px solid #545AE8;
+  }
 }
