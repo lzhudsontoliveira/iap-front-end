@@ -2,9 +2,6 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  & + & {
-    margin-top: 20px;
-  }
   input {
     appearance: none;
     width: 30px;
