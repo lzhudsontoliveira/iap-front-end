@@ -1,0 +1,102 @@
+.my-performance {
+  margin-top: 135px;
+  &__container {
+    max-width: 1300px;
+  }
+  &__cards-list {
+    margin-top: 50px;
+    margin-bottom: 190px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 45px;
+    row-gap: 60px;
+  }
+  &__chart-container {
+    margin: 0 auto;
+    margin-top: 75px;
+  }
+  &__custom-table {
+    margin-top: 50px;
+    &-legend {
+      text-align: right;
+      color: $black-100;
+    }
+    &-row {
+      &:first-child {
+        margin-top: 15px;
+      }
+      &:nth-child(odd) {
+        background: rgba(1, 1, 1, 0.04);
+        backdrop-filter: blur(40px);
+        border-radius: 10px;
+      }
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-label,
+    &-value {
+      font-family: $roboto;
+      font-weight: 700;
+      font-size: 16px;
+      color: $black-100;
+    }
+  }
+}
+
+.mount-battery-questions {
+  margin-bottom: 330px;
+  &__container {
+    max-width: 1300px;
+  }
+  &__form {
+    margin-top: 50px;
+    padding: 65px 50px;
+    margin-top: 50px;
+    background: $white;
+    box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+    border-radius: 15px;
+  }
+  &__group {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    & + & {
+      margin-top: 60px;
+    }
+    &-legend {
+      font-family: $roboto;
+      font-weight: 700;
+      font-size: pxToRem(36);
+
+      color: $gray-500;
+    }
+  }
+  &__options {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 55px;
+    row-gap: 40px;
+  }
+  &__buttons {
+    margin-top: 85px;
+    display: flex;
+    gap: 45px;
+  }
+  &__button-submit, &__button-clear {
+    padding: 30px 65px;
+    font-family: $inter;
+    font-weight: 800;
+    font-size: pxToRem(20);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__button-submit {
+    color: $white;
+  }
+  &__button-clear {
+    color: $black-100;
+  }
+}
