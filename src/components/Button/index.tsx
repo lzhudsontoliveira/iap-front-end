@@ -8,6 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const VARIANTS_CLASS = {
   "gradient-blue": "button--gradient-blue",
+  "outline-blue": "button--outline-blue"
 };
 
 export function Button({ children, className, variant, ...rest }: ButtonProps) {
