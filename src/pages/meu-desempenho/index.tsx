@@ -2,7 +2,6 @@ import { CardBox } from "../../components/CarBox";
 import { Container } from "../../components/layout/Container";
 import { Title } from "../../components/Title";
 import styles from "./styles.module.scss";
-import { Chart, ArcElement, Legend } from "chart.js";
 import { RadioGroup } from "../../components/RadioGroup";
 import FormGroup from "../../components/FormGroup";
 import { Button } from "../../components/Button";
