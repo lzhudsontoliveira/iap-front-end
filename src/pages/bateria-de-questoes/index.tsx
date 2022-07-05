@@ -1,6 +1,6 @@
 import { Button } from "../../components/Button";
 import { Container } from "../../components/layout/Container";
-import { Question } from "./components/Question";
+import { Question } from "../../components/pages/battery-of-questions/Question";
 import styles from "./styles.module.scss";
 
 export default function BatteryOfQuestions() {
