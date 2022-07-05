@@ -1,0 +1,101 @@
+.battery-questions {
+  &__container {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 890px 400px;
+    column-gap: 30px;
+  }
+  &__question-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  &__question-item {
+    & + & {
+      margin-top: 36px;
+    }
+  }
+  &__map {
+    background: #ffffff;
+    box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+    border-radius: 15px;
+    padding: 50px;
+    height: fit-content;
+  }
+  &__map-text {
+    font-family: $inter;
+    font-weight: 800;
+    font-size: pxToRem(18);
+    line-height: pxToRem(22);
+    text-align: center;
+    color: $black-200;
+    text-transform: uppercase;
+  }
+  &__map-pages {
+    margin-top: 36px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  &__map-page {
+    font-family: $inter;
+    font-weight: 800;
+    font-size: pxToRem(16);
+    line-height: pxToRem(19);
+    text-align: center;
+    color: $black-100;
+    &--active {
+      color: $primary;
+    }
+  }
+  &__map-pagination {
+    margin-top: 36px;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+  }
+  &__map-pagination-button {
+    background: #ffffff;
+    box-shadow: 0px 4px 31px rgba(83, 90, 255, 0.2);
+    border-radius: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:first-child {
+      transform: rotate(90deg);
+    }
+    &:last-child {
+      transform: rotate(-90deg);
+    }
+  }
+  &__end-exercise {
+    width: 100%;
+    margin: 35px 0;
+    padding: 20px 43px;
+    font-family: $inter;
+    font-weight: 800;
+    font-size: pxToRem(18);
+    line-height: pxToRem(22);
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+  }
+  &__change-full-screen {
+    margin-top: 36px;
+    padding: 15px 43px;
+    font-family: $inter;
+    font-weight: 800;
+    font-size: pxToRem(20);
+    line-height: pxToRem(24);
+    color: $black-100;
+    width: 100%;
+  }
+}
