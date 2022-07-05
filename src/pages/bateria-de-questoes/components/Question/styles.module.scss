@@ -1,0 +1,63 @@
+.question {
+  padding: 45px 60px;
+  background: #ffffff;
+  box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+  border-radius: 15px;
+  &__header {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  &__description {
+    margin-top: 36px;
+    font-family: $roboto;
+    font-weight: 300;
+    font-size: pxToRem(18);
+    line-height: pxToRem(21);
+    color: $black-100;
+  }
+  &__answers {
+    margin-top: 32px;
+  }
+  &__answer {
+    padding: 20px 18px;
+    background: rgba(1, 1, 1, 0.04);
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    & + & {
+      margin-top: 28px;
+    }
+  }
+  &__label {
+    font-family: $roboto;
+    color: $black-900;
+    font-weight: 300;
+  }
+  &__reply {
+    margin-top: 50px;
+    padding: 28px 73px;
+    background: linear-gradient(214.12deg, #545ae8 -5.77%, #3893ff 108.51%);
+    border-radius: 15px;
+    font-family: $inter;
+    font-weight: 800;
+    font-size: pxToRem(20);
+    line-height: pxToRem(24);
+    color: $white;
+    text-transform: uppercase;
+  }
+  &__footer {
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+  }
+}
