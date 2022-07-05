@@ -1,5 +1,4 @@
 import { CardBox } from "../../components/CarBox";
-import type { ChartData, ChartOptions } from "chart.js";
 import { Container } from "../../components/layout/Container";
 import { Title } from "../../components/Title";
 import styles from "./styles.module.scss";
@@ -7,12 +6,6 @@ import { Chart, ArcElement, Legend } from "chart.js";
 import { RadioGroup } from "../../components/RadioGroup";
 import FormGroup from "../../components/FormGroup";
 import { Button } from "../../components/Button";
-Chart.register(ArcElement, Legend);
-
-interface DougnutPropsData {
-  options: ChartOptions<"line">;
-  data: ChartData<"line">;
-}
 
 export default function MyPerfomance() {
   return (
