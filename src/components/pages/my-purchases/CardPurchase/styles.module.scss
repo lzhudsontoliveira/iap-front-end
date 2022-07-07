@@ -1,0 +1,17 @@
+.card-purchase {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  &__course-image {
+    width: 100%;
+  }
+  &__course-name {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: pxToRem(16);
+    line-height: pxToRem(19);
+    text-align: center;
+    color: $black-200;
+  }
+}
