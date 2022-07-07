@@ -1,9 +1,9 @@
-.my-courses {
+.my-orders {
   margin-top: 120px;
   @media (max-width: 425px) {
     margin-top: 70px;
   }
-  &__no-courses {
+  &__no-orders {
     max-width: 1320px;
     background: #ffffff;
     box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
@@ -16,7 +16,7 @@
     gap: 50px;
     margin: 0 auto;
   }
-  &__no-courses-message {
+  &__no-orders-message {
     font-family: $roboto;
     font-weight: 700;
     font-size: pxToRem(26);
