@@ -1,0 +1,93 @@
+.my-purchases {
+  padding: 120px 0 95px;
+  &--with-purchases {
+    background-color: $white;
+    box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+  }
+  @media (max-width: 425px) {
+    margin-top: 70px;
+  }
+  &__no-purchases {
+    max-width: 1320px;
+    background: #ffffff;
+    box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+    border-radius: 15px;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+  }
+  &__no-purchases-message {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: pxToRem(26);
+    line-height: pxToRem(30);
+    text-align: center;
+    text-transform: uppercase;
+    color: #babbda;
+  }
+  &__button-courses {
+    width: 100%;
+    width: 400px;
+    max-width: 400px;
+    height: 80px;
+    text-transform: uppercase;
+    font-size: pxToRem(20);
+    line-height: pxToRem(24);
+    font-weight: 800;
+    font-family: $inter;
+    margin-top: 80px;
+    margin: 0 auto;
+  }
+  &__link-courses {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 80px;
+    margin-bottom: 125px;
+    @media (max-width: 425px) {
+      margin-top: 45px;
+      margin-bottom: 110px;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+  &__search {
+    margin-top: 45px;
+  }
+}
+
+.my-purchases-lists {
+  margin-top: 100px;
+  margin-bottom: 180px;
+  &__container {
+    max-width: 1120px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 10px 10px 148px rgba(84, 90, 232, 0.11);
+    border-radius: 15px;
+    padding: 75px 0px 130px 60px;
+  }
+  &__list-separator {
+    margin: 100px 0;
+    border: 1px solid #DFDFDF;
+    max-width: 980px;
+  }
+  &__list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list-buttons-container {
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+  }
+  &__list-slider {
+    margin-top: 40px;
+  }
+}
