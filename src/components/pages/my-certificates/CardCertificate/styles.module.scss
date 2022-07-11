@@ -1,0 +1,56 @@
+.card-certificate {
+  padding: 35px 55px;
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(83, 90, 255, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in;
+  &:hover {
+    transform: translateY(-5px);
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  &__course-name {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: pxToRem(18);
+    line-height: pxToRem(21);
+    color: $black-100;
+  }
+  &__status {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: pxToRem(16);
+    line-height: pxToRem(19);
+    text-transform: uppercase;
+    &--pending {
+      color: $primary;
+    }
+    &--no-emitted {
+      color: $danger;
+    }
+    &--emitted {
+      color: $success;
+    }
+  }
+  &__button {
+    padding: 19px 43px;
+    font-family: $inter;
+    font-weight: 800;
+    font-size: pxToRem(21);
+    line-height: pxToRem(24);
+    color: $black-100;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s ease-in-out;
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
